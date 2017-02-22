@@ -5,10 +5,16 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "lerna": "2.0.0-beta.37"
+    "@types/react": "^15.0.11",
+    "@types/react-dom": "^0.14.23",
+    "lerna": "2.0.0-beta.37",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "typescript": "^2.1.6"
   },
   "scripts": {
     "lerna": "lerna",
+    "start": "cd packages/skeoh-ui-guide && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
