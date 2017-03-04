@@ -1,3 +1,27 @@
+@import "~skeoh-ui-common-styles/src/styles";
+
 .skeoh-ui-button {
-	color: #000;
+	padding: 0.25em;
+	vertical-align: baseline;
+	border: 1px solid @color-button-border;
+	background-color: @color-button-bg;
+	cursor: pointer;
+
+	&:hover,
+	&.hover {
+		background-color: @color-button-hover-bg;
+	}
+
+	&:focus,
+	&.focus {
+		outline: 2px solid @color-outline-glow-primary;
+		outline-offset: 1px;
+		animation: skeoh-ui-outline-glow 3s infinite;
+		background-color: @color-button-focus-bg;
+	}
+
+	&:active,
+	&.active {
+		background-color: @color-button-active-bg;
+	}
 }
