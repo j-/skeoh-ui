@@ -5,7 +5,10 @@ export interface IProps {
 }
 
 const Button = (props: IProps) => (
-	<button { ...props } />
+	<button
+		className="skeoh-ui-button"
+		{ ...props }
+	/>
 );
 
 export default Button;

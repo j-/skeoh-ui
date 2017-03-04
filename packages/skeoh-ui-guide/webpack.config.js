@@ -12,10 +12,18 @@ module.exports = {
 		filename: 'bundle.js',
 	},
 	resolve: {
-		extensions: ['.ts', '.tsx', '.js', '.jsx'],
+		extensions: ['.ts', '.tsx', '.js', '.jsx', '.less', '.css'],
 	},
 	module: {
 		rules: [
+			{
+				use: [
+					'style-loader',
+					'css-loader',
+					'less-loader',
+				],
+				test: /.(css|less)$/,
+			},
 			{
 				use: [
 					{
