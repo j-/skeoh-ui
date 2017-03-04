@@ -14,16 +14,16 @@
 
 	&:focus,
 	&.focus {
+		background-color: @color-button-focus-bg;
 		outline: 2px solid @color-outline-glow-primary;
 		outline-offset: 1px;
-		animation: skeoh-ui-outline-glow 3s infinite;
-		background-color: @color-button-focus-bg;
+		animation: @animation-outline-glow;
 	}
 
 	&:active,
 	&.active {
 		background-color: @color-button-active-bg;
 		outline-color: @color-outline-glow-primary;
-		animation: none;
+		animation: @animation-outline-static;
 	}
 }
