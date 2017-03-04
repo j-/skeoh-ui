@@ -5,11 +5,14 @@
 	vertical-align: baseline;
 	border: 1px solid @color-button-border;
 	background-color: @color-button-bg;
-	cursor: pointer;
 
-	&:hover,
-	&.hover {
-		background-color: @color-button-hover-bg;
+	&:not(:disabled):not(.disabled) {
+		cursor: pointer;
+
+		&:hover,
+		&.hover {
+			background-color: @color-button-hover-bg;
+		}
 	}
 
 	&:focus,
