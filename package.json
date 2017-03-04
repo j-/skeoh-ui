@@ -13,6 +13,7 @@
     "typescript": "^2.2.1"
   },
   "scripts": {
+    "bootstrap": "lerna bootstrap",
     "lerna": "lerna",
     "start": "cd packages/skeoh-ui-guide && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
