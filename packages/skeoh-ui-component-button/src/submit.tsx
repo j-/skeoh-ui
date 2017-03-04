@@ -7,7 +7,7 @@ interface IProps {
 
 const Submit = (props: IProps) => (
 	<Button type="submit">
-		{ props.children || 'Submit ' }
+		{ props.children || 'Submit' }
 	</Button>
 );
 
