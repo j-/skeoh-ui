@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Button from './button';
 
-interface IProps {
+export interface IProps {
 	children?: JSX.Element,
 }
 
