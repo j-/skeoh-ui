@@ -1,0 +1,21 @@
+{
+  "name": "skeoh-ui-component-button",
+  "version": "0.0.0",
+  "description": "Generic and specific buttons",
+  "typings": "./src/index.tsx",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-/skeoh-ui.git"
+  },
+  "author": "Jamie Hoeks <j@skeoh.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-/skeoh-ui/issues"
+  },
+  "homepage": "https://github.com/j-/skeoh-ui#readme"
+}

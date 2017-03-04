@@ -1,7 +1,8 @@
 import * as React from 'react';
+import { Submit } from 'skeoh-ui-component-button/src';
 
 export const App = () => (
 	<div>
-		<h1>Hello world</h1>
+		<Submit>Hello world</Submit>
 	</div>
 );
