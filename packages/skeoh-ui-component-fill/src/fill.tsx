@@ -5,7 +5,7 @@ export interface IProps extends React.Props<void> {
 
 }
 
-const wrapChild = (child: JSX.Element, idx: number) => (
+const wrapChild = (child: React.ReactElement<any>) => (
 	React.cloneElement(
 		child,
 		{
