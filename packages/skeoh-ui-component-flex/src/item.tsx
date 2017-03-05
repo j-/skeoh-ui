@@ -9,7 +9,7 @@ export interface IProps extends React.Props<HTMLDivElement> {
 const FlexItem = (props: IProps) => (
 	<div
 		{ ...props }
-		className={ classNames('skeoh-ui-flex-item', props.classNames) }
+		className={ classNames('skeoh-ui-flex-item', props.className) }
 		style={{
 			...props.style,
 			flexGrow: props.grow || 1,

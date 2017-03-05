@@ -8,7 +8,7 @@ export interface IProps extends React.Props<HTMLDivElement> {
 const FlexContainer = (props: IProps) => (
 	<div
 		{ ...props }
-		className={ classNames('skeoh-ui-flex-container', props.classNames) }
+		className={ classNames('skeoh-ui-flex-container', props.className) }
 	/>
 );
 
