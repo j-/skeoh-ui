@@ -4,6 +4,7 @@ import { FlexContainer, FlexItem } from 'skeoh-ui-component-flex/src';
 import { Fill } from 'skeoh-ui-component-fill/src';
 
 export interface IProps extends React.Props<HTMLDivElement> {
+	vertical?: boolean,
 	[prop: string]: any,
 }
 
@@ -16,10 +17,14 @@ const flexItem = (child: React.ReactElement<any>) => (
 const ButtonGroup = (props: IProps) => (
 	<div
 		{ ...props }
-		className={ classNames("skeoh-ui-button-group", props.className) }
+		className={ classNames({
+			'skeoh-ui-button-group': true,
+			'skeoh-ui-button-group-horizontal': !props.vertical,
+			'skeoh-ui-button-group-vertical': props.vertical,
+		}, props.className) }
 	>
 		<Fill>
-			<FlexContainer>
+			<FlexContainer row={ !props.vertical } column={ props.vertical }>
 				{ React.Children.map(props.children, flexItem) }
 			</FlexContainer>
 		</Fill>
