@@ -1,5 +1,6 @@
 @import "~skeoh-ui-common-styles/src/styles";
 @import "~skeoh-ui-component-flex/src/styles";
+@import "~skeoh-ui-component-fill/src/styles";
 
 .skeoh-ui-button {
 	padding: 0.25em;
@@ -38,14 +39,13 @@
 	.skeoh-ui-button {
 		position: relative;
 		z-index: 1;
-		width: 100%;
-
-		&:not(:last-child) {
-			margin-right: -1px;
-		}
 
 		&:focus {
 			z-index: 2;
 		}
+	}
+
+	.skeoh-ui-flex-item:not(:last-child) {
+		margin-right: -1px;
 	}
 }
