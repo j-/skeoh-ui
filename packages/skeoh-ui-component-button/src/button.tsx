@@ -7,6 +7,7 @@ export interface IProps {
 
 const Button = (props: IProps) => (
 	<button
+		type="button"
 		className={ classNames("skeoh-ui-button", props.className) }
 		{ ...props }
 	/>
