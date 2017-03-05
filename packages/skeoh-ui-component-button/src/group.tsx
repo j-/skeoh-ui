@@ -18,7 +18,6 @@ const ButtonGroup = (props: IProps) => (
 	<div
 		{ ...props }
 		className={ classNames({
-			'skeoh-ui-button-group': true,
 			'skeoh-ui-button-group-horizontal': !props.vertical,
 			'skeoh-ui-button-group-vertical': props.vertical,
 		}, props.className) }

@@ -44,24 +44,28 @@
 			z-index: 2;
 		}
 	}
+}
 
-	&.skeoh-ui-button-group-horizontal {
-		.skeoh-ui-flex-container {
-			flex-direction: row;
-		}
+.skeoh-ui-button-group-horizontal {
+	.skeoh-ui-button-group();
 
-		.skeoh-ui-flex-item:not(:last-child) {
-			margin-right: -1px;
-		}
+	.skeoh-ui-flex-container {
+		flex-direction: row;
 	}
 
-	&.skeoh-ui-button-group-vertical {
-		.skeoh-ui-flex-container {
-			flex-direction: column;
-		}
+	.skeoh-ui-flex-item:not(:last-child) {
+		margin-right: -1px;
+	}
+}
 
-		.skeoh-ui-flex-item:not(:last-child) {
-			margin-bottom: -1px;
-		}
+.skeoh-ui-button-group-vertical {
+	.skeoh-ui-button-group();
+
+	.skeoh-ui-flex-container {
+		flex-direction: column;
+	}
+
+	.skeoh-ui-flex-item:not(:last-child) {
+		margin-bottom: -1px;
 	}
 }
