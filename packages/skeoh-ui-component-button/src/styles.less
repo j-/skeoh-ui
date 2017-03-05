@@ -30,3 +30,20 @@
 		animation: @animation-outline-static;
 	}
 }
+
+.skeoh-ui-button-group {
+	display: inline-block;
+
+	> .skeoh-ui-button {
+		position: relative;
+		z-index: 1;
+
+		&:not(:last-child) {
+			margin-right: -1px;
+		}
+
+		&:focus {
+			z-index: 2;
+		}
+	}
+}
