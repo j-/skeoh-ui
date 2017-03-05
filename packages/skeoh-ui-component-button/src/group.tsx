@@ -24,7 +24,7 @@ const ButtonGroup = (props: IProps) => (
 		}, props.className) }
 	>
 		<Fill>
-			<FlexContainer row={ !props.vertical } column={ props.vertical }>
+			<FlexContainer>
 				{ React.Children.map(props.children, flexItem) }
 			</FlexContainer>
 		</Fill>
