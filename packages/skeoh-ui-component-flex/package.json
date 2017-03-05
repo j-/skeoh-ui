@@ -1,7 +1,7 @@
 {
-  "name": "skeoh-ui-component-button",
+  "name": "skeoh-ui-component-flex",
   "version": "0.0.0",
-  "description": "Generic and specific buttons",
+  "description": "Flexbox utility components",
   "typings": "./src/index.tsx",
   "main": "./dist/index.js",
   "scripts": {
@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/j-/skeoh-ui#readme",
   "devDependencies": {
-    "skeoh-ui-common-styles": "*",
-    "skeoh-ui-component-flex": "*"
+    "skeoh-ui-common-styles": "*"
   }
 }

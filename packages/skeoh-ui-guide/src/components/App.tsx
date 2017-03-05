@@ -9,8 +9,8 @@ export const App = () => (
 		<br />
 		<ButtonGroup>
 			<Button>Foo</Button>
-			<Button>Bar</Button>
-			<Button>Baz</Button>
+			<Button>FooBar</Button>
+			<Button>FooBarBaz</Button>
 		</ButtonGroup>
 	</div>
 );
