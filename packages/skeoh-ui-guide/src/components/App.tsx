@@ -12,5 +12,9 @@ export const App = () => (
 			<Button>FooBar</Button>
 			<Button>FooBarBaz</Button>
 		</ButtonGroup>
+		<br />
+		<br />
+		<br />
+		<Button disabled>Can't touch this</Button>
 	</div>
 );

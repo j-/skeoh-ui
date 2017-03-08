@@ -8,7 +8,7 @@
 	border: 1px solid @color-button-border;
 	background-color: @color-button-bg;
 
-	&:not(:disabled):not(.disabled) {
+	&:not(:disabled):not([disabled]):not(.disabled) {
 		cursor: pointer;
 
 		&:hover,
@@ -32,6 +32,14 @@
 			outline-color: @color-outline-glow-primary;
 			animation: @animation-outline-static;
 		}
+	}
+
+	&:disabled,
+	&[disabled],
+	&.disabled {
+		background-color: @color-button-disabled-bg;
+		border-color: @color-button-disabled-border;
+		color: @color-button-disabled-text;
 	}
 }
 
