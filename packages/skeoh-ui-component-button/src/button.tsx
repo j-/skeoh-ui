@@ -1,8 +1,8 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-export interface IProps {
-	[prop: string]: any,
+export interface IProps extends React.HTMLAttributes<HTMLInputElement> {
+
 }
 
 const Button = (props: IProps) => (

@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Button from './button';
+import Button, { IProps as IButtonProps } from './button';
 
-export interface IProps {
-	children?: JSX.Element,
+export interface IProps extends IButtonProps {
+
 }
 
 const Submit = (props: IProps) => (
