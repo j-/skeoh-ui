@@ -23,12 +23,12 @@ const getFlexDirection = (props: IProps) => {
 	}
 };
 
-const FlexContainer = (props: IProps) => (
+const FlexContainer = ({ className, style, ...props }: IProps) => (
 	<div
 		{ ...props }
-		className={ classNames('skeoh-ui-flex-container', props.className) }
+		className={ classNames('skeoh-ui-flex-container', className) }
 		style={{
-			...props.style,
+			...style,
 			flexDirection: getFlexDirection(props),
 		}}
 	/>
