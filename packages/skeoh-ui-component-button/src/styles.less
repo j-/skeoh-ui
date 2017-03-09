@@ -5,11 +5,12 @@
 .skeoh-ui-button {
 	padding: 0.25em;
 	vertical-align: baseline;
-	border: 1px solid @color-button-border;
-	background-color: @color-button-bg;
+	border: 1px solid;
 
 	&:not(:disabled):not([disabled]):not(.disabled) {
 		cursor: pointer;
+		border-color: @color-button-border;
+		background-color: @color-button-bg;
 
 		&:hover,
 		&.hover {
