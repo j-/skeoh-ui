@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Button, Submit, ButtonGroup } from 'skeoh-ui-component-button/src';
+import { Input } from 'skeoh-ui-component-input/src';
 
 export const App = () => (
 	<div>
@@ -16,5 +17,9 @@ export const App = () => (
 		<br />
 		<br />
 		<Button disabled>Can't touch this</Button>
+		<br />
+		<br />
+		<br />
+		<Input />
 	</div>
 );
