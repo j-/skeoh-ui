@@ -11,7 +11,7 @@ const wrapChild = (child: React.ReactElement<any>) => (
 		{
 			...child.props,
 			className: classNames('skeoh-ui-fill-vertical', child.props.className),
-		}
+		},
 	)
 );
 

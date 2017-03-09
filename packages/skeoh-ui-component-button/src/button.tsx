@@ -9,7 +9,7 @@ const Button = (props: IProps) => (
 	<button
 		{ ...props }
 		type="button"
-		className={ classNames("skeoh-ui-button", props.className) }
+		className={ classNames('skeoh-ui-button', props.className) }
 	/>
 );
 

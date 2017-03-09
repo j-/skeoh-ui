@@ -2,10 +2,10 @@ import * as React from 'react';
 import * as classNames from 'classnames';
 
 export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
-	row?: boolean,
-	rowReverse?: boolean,
-	column?: boolean,
-	columnReverse?: boolean,
+	row?: boolean;
+	rowReverse?: boolean;
+	column?: boolean;
+	columnReverse?: boolean;
 }
 
 const getFlexDirection = (props: IProps) => {

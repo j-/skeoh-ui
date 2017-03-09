@@ -6,7 +6,7 @@ export interface IProps extends IButtonProps {
 }
 
 const Submit = ({ children, ...props }: IProps) => (
-	<Button type="submit">
+	<Button type="submit" { ...props }>
 		{ children || 'Submit' }
 	</Button>
 );
