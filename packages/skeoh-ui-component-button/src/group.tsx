@@ -5,7 +5,6 @@ import { Fill } from 'skeoh-ui-component-fill/src';
 
 export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 	vertical?: boolean,
-	[prop: string]: any,
 }
 
 const flexItem = (child: React.ReactElement<any>) => (

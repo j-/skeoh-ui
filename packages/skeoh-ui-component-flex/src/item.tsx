@@ -3,7 +3,6 @@ import * as classNames from 'classnames';
 
 export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 	grow: number,
-	[prop: string]: any,
 }
 
 const FlexItem = ({ className, style, grow, ...props }: IProps) => (

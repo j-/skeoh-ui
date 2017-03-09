@@ -4,9 +4,8 @@ import * as classNames from 'classnames';
 export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 	row?: boolean,
 	rowReverse?: boolean,
-	columm?: boolean,
+	column?: boolean,
 	columnReverse?: boolean,
-	[prop: string]: any,
 }
 
 const getFlexDirection = (props: IProps) => {
