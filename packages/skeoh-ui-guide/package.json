@@ -18,7 +18,7 @@
     "url": "https://github.com/j-/skeoh-ui/issues"
   },
   "homepage": "https://github.com/j-/skeoh-ui#readme",
-  "devDependencies": {
+  "dependencies": {
     "skeoh-ui-component-button": "*",
     "skeoh-ui-component-flex": "*",
     "skeoh-ui-component-input": "*"
