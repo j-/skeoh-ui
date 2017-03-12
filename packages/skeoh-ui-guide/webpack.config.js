@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const DefinePlugin = webpack.DefinePlugin;
 const HTMLPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const resolve = (relative) => path.resolve(__dirname, relative);
 
@@ -17,11 +18,13 @@ module.exports = {
 	module: {
 		rules: [
 			{
-				use: [
-					'style-loader',
-					'css-loader',
-					'less-loader',
-				],
+				use: ExtractTextPlugin.extract({
+					fallback: 'style-loader',
+					use: [
+						'css-loader',
+						'less-loader',
+					],
+				}),
 				test: /.(css|less)$/,
 			},
 			{
@@ -43,6 +46,7 @@ module.exports = {
 		],
 	},
 	plugins: [
+		new ExtractTextPlugin('styles.css'),
 		new HTMLPlugin({
 			template: resolve('./src/index.html'),
 		}),
