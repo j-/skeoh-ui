@@ -29,8 +29,17 @@
     "no-consecutive-blank-lines": true,
     "no-console": [
       true,
+      "assert",
+      "count",
+      "debug",
+      "dir",
+      "group",
+      "groupCollapsed",
+      "groupEnd",
+      "info",
       "log",
-      "error"
+      "profile",
+      "profileEnd"
     ],
     "no-construct": true,
     "no-debugger": true,
