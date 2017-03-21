@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Demo from './Demo';
 
 const LoadingIndicator = () => (
 	<div>
@@ -11,7 +12,7 @@ export interface IProps extends React.Props<void> {
 }
 
 interface IState {
-	Component?: React.ComponentClass<void>;
+	Component?: typeof Demo;
 }
 
 declare var require: {
@@ -36,7 +37,7 @@ export default class DemoContainer extends React.Component<IProps, IState> {
 	public ensureDependency () {
 		require.ensure(['./Demo'], (require) => {
 			const demoModule: any = require('./Demo');
-			const Component: React.ComponentClass<void> = demoModule.default;
+			const Component = demoModule.default as typeof Demo;
 			this.setState({
 				Component,
 			});
