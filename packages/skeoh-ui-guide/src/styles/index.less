@@ -1,6 +1,48 @@
+@import (inline) "../../../../node_modules/codemirror/lib/codemirror.css";
+
 @import "../../node_modules/skeoh-ui-component-button/src/styles";
 @import "../../node_modules/skeoh-ui-component-input/src/styles";
 
 body {
 	margin: 1em;
+}
+
+.demo-container {
+	display: flex;
+	flex-direction: row;
+	height: 500px;
+}
+
+.demo-section-editor {
+	flex-basis: 47.5%;
+	border: 1px solid #ccc;
+	overflow: auto;
+
+	> .ReactCodeMirror {
+		width: 100%;
+		height: 100%;
+	}
+
+	.CodeMirror {
+		height: 100%;
+	}
+}
+
+.demo-section-actions {
+	flex-basis: 10%;
+	position: relative;
+	padding: 2em;
+}
+
+.demo-section-output {
+	flex-basis: 47.5%;
+	border: 1px solid #ccc;
+
+	> .demo-output {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
 }
