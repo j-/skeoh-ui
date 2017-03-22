@@ -4,7 +4,7 @@
   "description": "Styles to be shared between components",
   "scripts": {
     "build": "lessc src/styles.less dist/styles.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
