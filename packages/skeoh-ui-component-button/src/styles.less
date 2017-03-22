@@ -51,9 +51,17 @@
 		position: relative;
 		z-index: 1;
 
-		&:hover,
-		&.hover {
-			z-index: 2;
+		&:not(:disabled):not([disabled]):not(.disabled) {
+			&:hover,
+			&.hover {
+				z-index: 2;
+			}
+		}
+
+		&:disabled,
+		&[disabled],
+		&.disabled {
+			z-index: 0;
 		}
 
 		&:focus,
