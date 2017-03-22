@@ -45,8 +45,9 @@ ReactDOM.render(
     <h1>Hello world</h1>
     <FillHorizontal>
       <ButtonGroup>
-        <Button>Hello</Button>
-        <Button>World</Button>
+        <Button>Foo</Button>
+        <Button>Bar</Button>
+        <Button>Baz</Button>
       </ButtonGroup>
     </FillHorizontal>
   </div>,
