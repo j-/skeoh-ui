@@ -7,13 +7,19 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const resolve = (relative) => path.resolve(__dirname, relative);
 
 module.exports = {
-	entry: resolve('./src/index.tsx'),
+	entry: {
+		main: resolve('./src/index.tsx'),
+	},
 	output: {
 		path: resolve('./dist'),
-		filename: 'bundle.js',
+		filename: '[name].bundle.js',
 	},
 	resolve: {
 		extensions: ['.ts', '.tsx', '.js', '.jsx', '.less', '.css'],
+	},
+	node: {
+		fs: 'empty',
+		module: 'empty',
 	},
 	module: {
 		rules: [
@@ -49,6 +55,7 @@ module.exports = {
 		new ExtractTextPlugin('styles.css'),
 		new HTMLPlugin({
 			template: resolve('./src/index.html'),
+			inject: false,
 		}),
 		new DefinePlugin({
 			'process.env': {

@@ -50,7 +50,6 @@
     "no-magic-numbers": true,
     "no-parameter-properties": true,
     "no-reference": true,
-    "no-shadowed-variable": true,
     "no-string-literal": true,
     "no-string-throw": true,
     "no-trailing-whitespace": true,
@@ -99,7 +98,7 @@
     "typedef-whitespace": [
       true,
       {
-        "call-signature": "onespace",
+        "call-signature": "nospace",
         "index-signature": "nospace",
         "parameter": "nospace",
         "property-declaration": "nospace",

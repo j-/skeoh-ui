@@ -20,6 +20,7 @@
   "homepage": "https://github.com/j-/skeoh-ui#readme",
   "dependencies": {
     "skeoh-ui-component-button": "*",
+    "skeoh-ui-component-fill": "*",
     "skeoh-ui-component-flex": "*",
     "skeoh-ui-component-input": "*"
   }
