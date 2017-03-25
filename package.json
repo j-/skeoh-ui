@@ -35,7 +35,7 @@
     "build": "lerna run build",
     "lerna": "lerna",
     "lint": "tslint --exclude=packages/*/node_modules/** packages/**/*.{ts,tsx}",
-    "start": "cd packages/skeoh-ui-guide && npm start",
+    "start": "cd packages/guide && npm start",
     "test": "npm run lint && lerna run test"
   },
   "repository": {

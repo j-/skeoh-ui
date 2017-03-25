@@ -1,11 +1,9 @@
 {
-  "name": "skeoh-ui-component-input",
+  "name": "@skeoh-ui/common-styles",
   "version": "0.0.0",
-  "description": "Form control components",
-  "typings": "./src/index.tsx",
-  "main": "./dist/index.js",
+  "description": "Styles to be shared between components",
   "scripts": {
-    "build": "tsc && lessc src/styles.less dist/styles.css",
+    "build": "lessc src/styles.less dist/styles.css",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
@@ -17,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/j-/skeoh-ui/issues"
   },
-  "homepage": "https://github.com/j-/skeoh-ui#readme",
-  "dependencies": {
-    "skeoh-ui-common-styles": "*"
-  }
+  "homepage": "https://github.com/j-/skeoh-ui#readme"
 }

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
-import { FlexContainer, FlexItem } from 'skeoh-ui-component-flex/src';
-import { Fill } from 'skeoh-ui-component-fill/src';
+import { FlexContainer, FlexItem } from '@skeoh-ui/component-flex/src';
+import { Fill } from '@skeoh-ui/component-fill/src';
 
 export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 	vertical?: boolean;

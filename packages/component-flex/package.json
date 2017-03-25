@@ -1,11 +1,11 @@
 {
-  "name": "skeoh-ui-guide",
+  "name": "@skeoh-ui/component-flex",
   "version": "0.0.0",
-  "description": "UI kit demos and style guide",
-  "main": "index.js",
+  "description": "Flexbox utility components",
+  "typings": "./src/index.tsx",
+  "main": "./dist/index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p",
-    "start": "webpack-dev-server --inline --content-base dist/",
+    "build": "tsc && lessc src/styles.less dist/styles.css",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
@@ -19,9 +19,6 @@
   },
   "homepage": "https://github.com/j-/skeoh-ui#readme",
   "dependencies": {
-    "skeoh-ui-component-button": "*",
-    "skeoh-ui-component-fill": "*",
-    "skeoh-ui-component-flex": "*",
-    "skeoh-ui-component-input": "*"
+    "@skeoh-ui/common-styles": "*"
   }
 }
