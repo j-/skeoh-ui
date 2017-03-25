@@ -1,0 +1,24 @@
+{
+  "name": "@skeoh-ui/component-fill",
+  "version": "0.0.0",
+  "description": "Space filling utility components",
+  "typings": "./src/index.tsx",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc && lessc src/styles.less dist/styles.css",
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j-/skeoh-ui.git"
+  },
+  "author": "Jamie Hoeks <j@skeoh.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/j-/skeoh-ui/issues"
+  },
+  "homepage": "https://github.com/j-/skeoh-ui#readme",
+  "dependencies": {
+    "@skeoh-ui/common-styles": "*"
+  }
+}
