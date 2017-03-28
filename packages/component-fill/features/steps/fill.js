@@ -6,15 +6,15 @@ const Horizontal = require('../../dist/horizontal').default;
 const Vertical = require('../../dist/vertical').default;
 
 defineSupportCode(function (support) {
-	support.Given(/^a (?:(horizontal|vertical) )?fill component$/, function (type) {
+	support.Given(/^a (fill|horizontal fill|vertical fill) component$/, function (type) {
 		switch (type) {
-			case 'horizontal':
+			case 'horizontal fill':
 				this.wrapper = shallow(React.createElement(Horizontal));
 				break;
-			case 'vertical':
+			case 'vertical fill':
 				this.wrapper = shallow(React.createElement(Vertical));
 				break;
-			case undefined:
+			case 'fill':
 				this.wrapper = shallow(React.createElement(Fill));
 				break;
 			default:
@@ -22,16 +22,16 @@ defineSupportCode(function (support) {
 		}
 	});
 
-	support.Given(/^a (?:(horizontal|vertical) )?fill component with a child$/, function (type) {
+	support.Given(/^a (fill|horizontal fill|vertical fill) component with a child$/, function (type) {
 		const child = React.createElement('div');
 		switch (type) {
-			case 'horizontal':
+			case 'horizontal fill':
 				this.wrapper = shallow(React.createElement(Horizontal, {}, child));
 				break;
-			case 'vertical':
+			case 'vertical fill':
 				this.wrapper = shallow(React.createElement(Vertical, {}, child));
 				break;
-			case undefined:
+			case 'fill':
 				this.wrapper = shallow(React.createElement(Fill, {}, child));
 				break;
 			default:
