@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
-import * as ComponentButton from '@skeoh-ui/component-button/src';
-import * as ComponentFill from '@skeoh-ui/component-fill/src';
-import * as ComponentFlex from '@skeoh-ui/component-flex/src';
-import * as ComponentInput from '@skeoh-ui/component-input/src';
+import * as ComponentButton from '@skeoh-ui/component-button';
+import * as ComponentFill from '@skeoh-ui/component-fill';
+import * as ComponentFlex from '@skeoh-ui/component-flex';
+import * as ComponentInput from '@skeoh-ui/component-input';
 
 const xrequire = (moduleName: string) => {
 	switch (moduleName) {
