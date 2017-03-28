@@ -6,3 +6,7 @@ Feature: Horizontal fill component
 		Then the component should have the class "skeoh-ui-fill-horizontal"
 		And the component should have the class "helloworld"
 		And the component should have the class "foobar"
+
+	Scenario: Child component has the right class
+		Given a horizontal fill component with a child
+		Then the child should have the class "skeoh-ui-fill-horizontal"

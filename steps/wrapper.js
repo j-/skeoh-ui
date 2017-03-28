@@ -19,6 +19,10 @@ defineSupportCode(function (support) {
 		assert(this.wrapper.hasClass(className));
 	});
 
+	support.Then(/^the child should have the class "([^"]*?)"$/, function (className) {
+		assert(this.wrapper.childAt(0).hasClass(className));
+	});
+
 	support.Then(/^the component should have the prop "([^"]*?)" set to "([^"]*?)"$/, function (propName, value) {
 		assert.equal(this.wrapper.prop(propName), value);
 	});

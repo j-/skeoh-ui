@@ -21,4 +21,21 @@ defineSupportCode(function (support) {
 				throw new Error('Unrecognized type: ' + type);
 		}
 	});
+
+	support.Given(/^a (?:(horizontal|vertical) )?fill component with a child$/, function (type) {
+		const child = React.createElement('div');
+		switch (type) {
+			case 'horizontal':
+				this.wrapper = shallow(React.createElement(Horizontal, {}, child));
+				break;
+			case 'vertical':
+				this.wrapper = shallow(React.createElement(Vertical, {}, child));
+				break;
+			case undefined:
+				this.wrapper = shallow(React.createElement(Fill, {}, child));
+				break;
+			default:
+				throw new Error('Unrecognized type: ' + type);
+		}
+	});
 });
