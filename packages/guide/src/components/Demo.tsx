@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as CodeMirror from 'react-codemirror';
-import { Submit } from '@skeoh-ui/component-button/src';
-import { FillHorizontal } from '@skeoh-ui/component-fill/src';
+import { Submit } from '@skeoh-ui/component-button';
+import { FillHorizontal } from '@skeoh-ui/component-fill';
 import * as ts from 'typescript';
 import bootstrap from '../safe-imports';
 
