@@ -22,13 +22,21 @@ const getFlexDirection = (props: IProps) => {
 	}
 };
 
-const FlexContainer = ({ className, style, ...props }: IProps) => (
+const FlexContainer = ({
+	className,
+	style,
+	row,
+	rowReverse,
+	column,
+	columnReverse,
+	...props,
+}: IProps) => (
 	<div
 		{ ...props }
 		className={ classNames('skeoh-ui-flex-container', className) }
 		style={{
 			...style,
-			flexDirection: getFlexDirection(props),
+			flexDirection: getFlexDirection({ ...props, row, rowReverse, column, columnReverse }),
 		}}
 	/>
 );

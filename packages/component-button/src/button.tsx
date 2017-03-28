@@ -7,8 +7,8 @@ export interface IProps extends React.HTMLAttributes<HTMLInputElement> {
 
 const Button = (props: IProps) => (
 	<button
-		{ ...props }
 		type="button"
+		{ ...props }
 		className={ classNames('skeoh-ui-button', props.className) }
 	/>
 );

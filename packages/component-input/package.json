@@ -6,7 +6,7 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "tsc && lessc src/styles.less dist/styles.css",
-    "test": "echo \"Error: no test specified\""
+    "test": "tsc && cucumberjs --require features --require ../../steps"
   },
   "repository": {
     "type": "git",

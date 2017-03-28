@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-export interface IProps extends React.Props<void> {
+export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 
 }
 
@@ -15,9 +15,9 @@ const wrapChild = (child: React.ReactElement<any>) => (
 	)
 );
 
-const Fill = (props: IProps) => (
-	<div className="skeoh-ui-fill">
-		{ React.Children.map(props.children, wrapChild) }
+const Fill = ({ className, children, ...props }: IProps) => (
+	<div className={ classNames('skeoh-ui-fill', className) } { ...props }>
+		{ React.Children.map(children, wrapChild) }
 	</div>
 );
 
