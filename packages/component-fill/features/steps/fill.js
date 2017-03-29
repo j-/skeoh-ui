@@ -21,21 +21,4 @@ defineSupportCode(function (support) {
 				throw new Error('Unrecognized type: ' + type);
 		}
 	});
-
-	support.Given(/^a (fill|horizontal fill|vertical fill) component with a child$/, function (type) {
-		const child = React.createElement('div');
-		switch (type) {
-			case 'horizontal fill':
-				this.wrapper = shallow(React.createElement(Horizontal, {}, child));
-				break;
-			case 'vertical fill':
-				this.wrapper = shallow(React.createElement(Vertical, {}, child));
-				break;
-			case 'fill':
-				this.wrapper = shallow(React.createElement(Fill, {}, child));
-				break;
-			default:
-				throw new Error('Unrecognized type: ' + type);
-		}
-	});
 });
