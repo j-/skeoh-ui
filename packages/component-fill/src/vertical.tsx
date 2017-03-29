@@ -5,20 +5,8 @@ export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 
 }
 
-const wrapChild = (child: React.ReactElement<any>) => (
-	React.cloneElement(
-		child,
-		{
-			...child.props,
-			className: classNames('skeoh-ui-fill-vertical', child.props.className),
-		},
-	)
-);
-
-const FillVertical = ({ className, children, ...props }: IProps) => (
-	<div className={ classNames('skeoh-ui-fill-vertical', className) } { ...props }>
-		{ React.Children.map(children, wrapChild) }
-	</div>
+const FillVertical = ({ className, ...props }: IProps) => (
+	<div className={ classNames('skeoh-ui-fill-vertical', className) } { ...props } />
 );
 
 export default FillVertical;
