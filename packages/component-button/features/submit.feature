@@ -12,3 +12,8 @@ Feature: Submit button component
 	Scenario: Button has the right text by default
 		Given a submit button component
 		Then the component should have the text "Submit"
+
+	Scenario: Default text can be overridden
+		Given a submit button component
+		When the component has the text "Apply"
+		Then the component should have the text "Apply"

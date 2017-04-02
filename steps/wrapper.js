@@ -15,6 +15,10 @@ defineSupportCode(function (support) {
 		this.wrapper.setProps(newProps);
 	});
 
+	support.When(/^the component has the text "([^"]*?)"$/, function (text) {
+		this.wrapper.setProps({ children: text });
+	});
+
 	support.Then(/^the component should have the class "([^"]*?)"$/, function (className) {
 		assert(this.wrapper.hasClass(className));
 	});
