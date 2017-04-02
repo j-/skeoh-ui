@@ -15,6 +15,10 @@ defineSupportCode(function (support) {
 		this.wrapper.setProps(newProps);
 	});
 
+	support.When(/^the component has the text "([^"]*?)"$/, function (text) {
+		this.wrapper.setProps({ children: text });
+	});
+
 	support.Then(/^the component should have the class "([^"]*?)"$/, function (className) {
 		assert(this.wrapper.hasClass(className));
 	});
@@ -29,5 +33,9 @@ defineSupportCode(function (support) {
 
 	support.Then(/^the component should have the style "([^"]*?)" set to "([^"]*?)"$/, function (styleName, value) {
 		assert.equal(this.wrapper.prop('style')[styleName], value);
+	});
+
+	support.Then(/^the component should have the text "([^"]*?)"$/, function (value) {
+		assert.equal(this.wrapper.children().text(), value);
 	});
 });
