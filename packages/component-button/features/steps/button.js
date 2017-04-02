@@ -1,3 +1,4 @@
+const assert = require('assert');
 const React = require('react');
 const defineSupportCode = require('cucumber').defineSupportCode;
 const shallow = require('enzyme').shallow;
@@ -20,5 +21,21 @@ defineSupportCode(function (support) {
 			default:
 				throw new Error('Unrecognized type: ' + type);
 		}
+	});
+
+	support.Given(/^a button group with some buttons$/, function () {
+		const group = React.createElement(ButtonGroup, {}, [
+			React.createElement(Button),
+			React.createElement(Button),
+			React.createElement(Button),
+		]);
+		this.wrapper = shallow(group);
+	});
+
+	support.Then(/^every button should be wrapped in a fill$/, function () {
+		const result = this.wrapper.find('button').everyWhere((button) => (
+			button.parent().is('Fill')
+		));
+		assert(result);
 	});
 });

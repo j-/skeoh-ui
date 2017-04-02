@@ -21,11 +21,9 @@ const ButtonGroup = ({ vertical, className, ...props }: IProps) => (
 			'skeoh-ui-button-group-vertical': vertical,
 		}, className) }
 	>
-		<Fill>
-			<FlexContainer>
-				{ React.Children.map(props.children, flexItem) }
-			</FlexContainer>
-		</Fill>
+		<FlexContainer>
+			{ React.Children.map(props.children, flexItem) }
+		</FlexContainer>
 	</div>
 );
 

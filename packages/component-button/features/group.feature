@@ -16,5 +16,5 @@ Feature: Button group component
 		Then the component should have the class "skeoh-ui-button-group-vertical"
 
 	Scenario: Buttons in group will stretch
-		Given a button group component
-		Then the component should have a child with selector "Fill"
+		Given a button group with some buttons
+		Then every button should be wrapped in a fill
