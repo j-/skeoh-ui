@@ -13,13 +13,13 @@ const flexItem = (child: React.ReactElement<void>) => (
 	</FlexItem>
 );
 
-const ButtonGroup = (props: IProps) => (
+const ButtonGroup = ({ vertical, className, ...props }: IProps) => (
 	<div
 		{ ...props }
 		className={ classNames({
-			'skeoh-ui-button-group-horizontal': !props.vertical,
-			'skeoh-ui-button-group-vertical': props.vertical,
-		}, props.className) }
+			'skeoh-ui-button-group-horizontal': !vertical,
+			'skeoh-ui-button-group-vertical': vertical,
+		}, className) }
 	>
 		<Fill>
 			<FlexContainer>
