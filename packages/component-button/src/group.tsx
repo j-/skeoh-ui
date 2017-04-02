@@ -7,7 +7,7 @@ export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 	vertical?: boolean;
 }
 
-const flexItem = (child: React.ReactElement<void>) => (
+const flexItem = (child: React.ReactNode) => (
 	<FlexItem grow={ 1 }>
 		<Fill>{ child }</Fill>
 	</FlexItem>
