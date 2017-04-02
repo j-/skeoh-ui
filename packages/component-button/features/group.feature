@@ -14,3 +14,8 @@ Feature: Button group component
 		Given a button group component
 		When the prop "vertical" is set to true
 		Then the component should have the class "skeoh-ui-button-group-vertical"
+
+	Scenario: Buttons in group will stretch
+		Given a button group with some buttons
+		Then every button should be wrapped in a fill
+		And every button should grow with the group

@@ -7,25 +7,23 @@ export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
 	vertical?: boolean;
 }
 
-const flexItem = (child: React.ReactElement<void>) => (
+const flexItem = (child: React.ReactNode) => (
 	<FlexItem grow={ 1 }>
 		<Fill>{ child }</Fill>
 	</FlexItem>
 );
 
-const ButtonGroup = (props: IProps) => (
+const ButtonGroup = ({ vertical, className, children, ...props }: IProps) => (
 	<div
 		{ ...props }
 		className={ classNames({
-			'skeoh-ui-button-group-horizontal': !props.vertical,
-			'skeoh-ui-button-group-vertical': props.vertical,
-		}, props.className) }
+			'skeoh-ui-button-group-horizontal': !vertical,
+			'skeoh-ui-button-group-vertical': vertical,
+		}, className) }
 	>
-		<Fill>
-			<FlexContainer>
-				{ React.Children.map(props.children, flexItem) }
-			</FlexContainer>
-		</Fill>
+		<FlexContainer>
+			{ React.Children.map(children, flexItem) }
+		</FlexContainer>
 	</div>
 );
 
