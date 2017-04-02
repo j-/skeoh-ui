@@ -38,4 +38,8 @@ defineSupportCode(function (support) {
 	support.Then(/^the component should have the text "([^"]*?)"$/, function (value) {
 		assert.equal(this.wrapper.children().text(), value);
 	});
+
+	support.Then(/^the component should have a child with selector "([^"]*?)"$/, function (value) {
+		assert.equal(this.wrapper.find(value).length, 1);
+	});
 });
