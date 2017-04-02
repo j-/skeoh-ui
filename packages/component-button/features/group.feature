@@ -18,3 +18,4 @@ Feature: Button group component
 	Scenario: Buttons in group will stretch
 		Given a button group with some buttons
 		Then every button should be wrapped in a fill
+		And every button should grow with the group

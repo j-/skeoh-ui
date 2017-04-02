@@ -33,9 +33,21 @@ defineSupportCode(function (support) {
 	});
 
 	support.Then(/^every button should be wrapped in a fill$/, function () {
-		const result = this.wrapper.find('button').everyWhere((button) => (
+		const result = this.wrapper.find(Button).everyWhere((button) => (
 			button.parent().is('Fill')
 		));
 		assert(result);
+	});
+
+	support.Then(/^every button should grow with the group$/, function () {
+		const buttons = this.wrapper.find(Button);
+		assert(buttons.length >= 1, 'Group has buttons');
+		const result = buttons.everyWhere((button) => {
+			const flexItem = button.closest('FlexItem');
+			assert(flexItem.exists(), 'Button is wrapped in flex item');
+			assert.equal(flexItem.prop('grow'), 1, 'Flex item grows');
+			return true;
+		});
+		assert(result, 'All buttons are OK');
 	});
 });
