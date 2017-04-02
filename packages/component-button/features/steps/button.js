@@ -25,9 +25,9 @@ defineSupportCode(function (support) {
 
 	support.Given(/^a button group with some buttons$/, function () {
 		const group = React.createElement(ButtonGroup, {}, [
-			React.createElement(Button),
-			React.createElement(Button),
-			React.createElement(Button),
+			React.createElement(Button, { key: 1 }),
+			React.createElement(Button, { key: 2 }),
+			React.createElement(Button, { key: 3 }),
 		]);
 		this.wrapper = shallow(group);
 	});
