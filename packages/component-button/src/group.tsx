@@ -13,7 +13,7 @@ const flexItem = (child: React.ReactElement<void>) => (
 	</FlexItem>
 );
 
-const ButtonGroup = ({ vertical, className, ...props }: IProps) => (
+const ButtonGroup = ({ vertical, className, children, ...props }: IProps) => (
 	<div
 		{ ...props }
 		className={ classNames({
@@ -22,7 +22,7 @@ const ButtonGroup = ({ vertical, className, ...props }: IProps) => (
 		}, className) }
 	>
 		<FlexContainer>
-			{ React.Children.map(props.children, flexItem) }
+			{ React.Children.map(children, flexItem) }
 		</FlexContainer>
 	</div>
 );
