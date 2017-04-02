@@ -30,4 +30,8 @@ defineSupportCode(function (support) {
 	support.Then(/^the component should have the style "([^"]*?)" set to "([^"]*?)"$/, function (styleName, value) {
 		assert.equal(this.wrapper.prop('style')[styleName], value);
 	});
+
+	support.Then(/^the component should have the text "([^"]*?)"$/, function (value) {
+		assert.equal(this.wrapper.children().text(), value);
+	});
 });

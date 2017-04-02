@@ -8,3 +8,7 @@ Feature: Submit button component
 		Given a submit button component
 		When the prop "type" is set to "button"
 		Then the component should have the prop "type" set to "button"
+
+	Scenario: Button has the right text by default
+		Given a submit button component
+		Then the component should have the text "Submit"
