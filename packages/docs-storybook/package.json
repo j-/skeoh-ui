@@ -1,11 +1,11 @@
 {
-  "name": "@skeoh-ui/guide",
+  "name": "@skeoh-ui/docs-storybook",
   "version": "0.0.0",
-  "description": "UI kit demos and style guide",
+  "description": "UI kit components library",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p",
-    "start": "webpack-dev-server --inline --content-base dist/",
+    "build": "build-storybook -c stories -o dist",
+    "start": "start-storybook -c stories -p 9001",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
