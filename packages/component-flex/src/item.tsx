@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface Props extends React.HTMLAttributes<HTMLDivElement> {
 	grow: number;
 }
 
-const FlexItem = ({ className, style, grow, ...props }: IProps) => (
+const FlexItem = ({ className, style, grow, ...props }: Props) => (
 	<div
 		{ ...props }
 		className={ classNames('skeoh-ui-flex-item', className) }
