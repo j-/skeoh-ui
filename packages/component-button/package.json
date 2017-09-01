@@ -5,7 +5,7 @@
   "typings": "./src/index.tsx",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc && lessc src/styles.less dist/styles.css",
+    "build": "tsc && lessc --npm-import=\"prefix=~\" src/styles.less dist/styles.css",
     "test": "tsc && cucumberjs --require features --require ../../steps"
   },
   "repository": {
