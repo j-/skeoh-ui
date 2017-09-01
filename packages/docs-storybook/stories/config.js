@@ -3,4 +3,5 @@ import './styles.css';
 
 configure(() => {
 	require('./component-button');
+	require('./component-input');
 }, module);
