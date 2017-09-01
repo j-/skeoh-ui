@@ -19,23 +19,26 @@ storiesOf('component-button', module)
 	.add('button group', () => (
 		<ButtonGroup>
 			<Button onClick={action('onClick')}>Foo</Button>
-			<Button onClick={action('onClick')} disabled>Disabled</Button>
 			<Button onClick={action('onClick')}>Bar</Button>
+			<Button onClick={action('onClick')} disabled>Disabled</Button>
+			<Button onClick={action('onClick')}>Baz</Button>
 		</ButtonGroup>
 	))
 	.add('button group, fill horizontal', () => (
 		<FillHorizontal>
 			<ButtonGroup>
 				<Button onClick={action('onClick')}>Foo</Button>
-				<Button onClick={action('onClick')} disabled>Disabled</Button>
 				<Button onClick={action('onClick')}>Bar</Button>
+				<Button onClick={action('onClick')} disabled>Disabled</Button>
+				<Button onClick={action('onClick')}>Baz</Button>
 			</ButtonGroup>
 		</FillHorizontal>
 	))
 	.add('button group, vertical', () => (
 		<ButtonGroup vertical>
 			<Button onClick={action('onClick')}>Foo</Button>
-			<Button onClick={action('onClick')} disabled>Disabled</Button>
 			<Button onClick={action('onClick')}>Bar</Button>
+			<Button onClick={action('onClick')} disabled>Disabled</Button>
+			<Button onClick={action('onClick')}>Baz</Button>
 		</ButtonGroup>
 	));
