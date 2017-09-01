@@ -2,9 +2,12 @@ const assert = require('assert');
 const React = require('react');
 const defineSupportCode = require('cucumber').defineSupportCode;
 const shallow = require('enzyme').shallow;
-const Button = require('../../dist/button').default;
-const SubmitButton = require('../../dist/submit').default;
-const ButtonGroup = require('../../dist/group').default;
+
+const {
+	Button,
+	Submit,
+	ButtonGroup,
+} = require('../../');
 
 defineSupportCode(function (support) {
 	support.Given(/^a (button|submit button|button group) component$/, function (type) {
@@ -13,7 +16,7 @@ defineSupportCode(function (support) {
 				this.wrapper = shallow(React.createElement(Button));
 				break;
 			case 'submit button':
-				this.wrapper = shallow(React.createElement(SubmitButton));
+				this.wrapper = shallow(React.createElement(Submit));
 				break;
 			case 'button group':
 				this.wrapper = shallow(React.createElement(ButtonGroup));

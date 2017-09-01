@@ -1,8 +1,11 @@
 const React = require('react');
 const defineSupportCode = require('cucumber').defineSupportCode;
 const shallow = require('enzyme').shallow;
-const FlexContainer = require('../../dist/container').default;
-const FlexItem = require('../../dist/item').default;
+
+const {
+	FlexContainer,
+	FlexItem,
+} = require('../../');
 
 defineSupportCode(function (support) {
 	support.Given(/^a flex (container|item)$/, function (type) {

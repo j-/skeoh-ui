@@ -1,8 +1,11 @@
 const React = require('react');
 const defineSupportCode = require('cucumber').defineSupportCode;
 const shallow = require('enzyme').shallow;
-const Input = require('../../dist/input').default;
-const NumberInput = require('../../dist/number').default;
+
+const {
+	Input,
+	NumberInput,
+} = require('../../');
 
 defineSupportCode(function (support) {
 	support.Given(/^a (text|number) input$/, function (type) {
