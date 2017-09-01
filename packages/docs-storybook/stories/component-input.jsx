@@ -6,11 +6,11 @@ import '@skeoh-ui/component-input/dist/styles.css';
 
 storiesOf('component-input', module)
 	.add('text', () => (
-		<Input />
+		<Input onChange={action('onChange')} />
 	))
 	.add('number', () => (
-		<NumberInput />
+		<NumberInput onChange={action('onChange')} />
 	))
 	.add('number, no spinner', () => (
-		<NumberInput hideSpinner />
+		<NumberInput onChange={action('onChange')} hideSpinner />
 	));
