@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
-import Input, { IProps as IInputProps } from './input';
+import Input, { Props as InputProps } from './input';
 
-export interface IProps extends IInputProps {
+export interface Props extends InputProps {
 	hideSpinner?: boolean;
 }
 
-const NumberInput = ({ hideSpinner, className, ...props }: IProps) => (
+const NumberInput = ({ hideSpinner, className, ...props }: Props) => (
 	<Input
 		type="number"
 		{ ...props }

@@ -3,7 +3,7 @@ import * as classNames from 'classnames';
 import { FlexContainer, FlexItem } from '@skeoh-ui/component-flex';
 import { Fill } from '@skeoh-ui/component-fill';
 
-export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface Props extends React.HTMLAttributes<HTMLDivElement> {
 	vertical?: boolean;
 }
 
@@ -13,7 +13,7 @@ const flexItem = (child: React.ReactNode) => (
 	</FlexItem>
 );
 
-const ButtonGroup = ({ vertical, className, children, ...props }: IProps) => (
+const ButtonGroup = ({ vertical, className, children, ...props }: Props) => (
 	<div
 		{ ...props }
 		className={ classNames({

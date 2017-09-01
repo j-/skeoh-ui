@@ -1,14 +1,14 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-export interface IProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface Props extends React.HTMLAttributes<HTMLDivElement> {
 	row?: boolean;
 	rowReverse?: boolean;
 	column?: boolean;
 	columnReverse?: boolean;
 }
 
-const getFlexDirection = (props: IProps) => {
+const getFlexDirection = (props: Props) => {
 	if (props.row) {
 		return 'row';
 	} else if (props.rowReverse) {
@@ -30,7 +30,7 @@ const FlexContainer = ({
 	column,
 	columnReverse,
 	...props,
-}: IProps) => (
+}: Props) => (
 	<div
 		{ ...props }
 		className={ classNames('skeoh-ui-flex-container', className) }

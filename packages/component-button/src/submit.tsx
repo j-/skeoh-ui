@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
-import Button, { IProps as IButtonProps } from './button';
+import Button, { Props as ButtonProps } from './button';
 
-export interface IProps extends IButtonProps {
+export interface Props extends ButtonProps {
 
 }
 
-const Submit = ({ children, className, ...props }: IProps) => (
+const Submit = ({ children, className, ...props }: Props) => (
 	<Button
 		type="submit"
 		className={ classNames('skeoh-ui-button-submit', className) }
