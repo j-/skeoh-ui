@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as classNames from 'classnames';
 
-export interface Props extends React.HTMLAttributes<HTMLInputElement> {
+export interface Props extends React.HTMLAttributes<HTMLButtonElement> {
 
 }
 
