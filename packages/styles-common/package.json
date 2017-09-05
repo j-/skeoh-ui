@@ -1,5 +1,5 @@
 {
-  "name": "@skeoh-ui/common-styles",
+  "name": "@skeoh-ui/styles-common",
   "version": "0.0.0",
   "description": "Styles to be shared between components",
   "main": "./src/styles.less",

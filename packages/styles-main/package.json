@@ -1,12 +1,11 @@
 {
-  "name": "@skeoh-ui/component-input",
+  "name": "@skeoh-ui/styles-main",
   "version": "0.0.0",
-  "description": "Form control components",
-  "typings": "./src/index.tsx",
-  "main": "./dist/index.js",
+  "description": "Single stylesheet that declares generic styles",
+  "main": "./dist/styles.css",
   "scripts": {
-    "build": "tsc && lessc --npm-import=\"prefix=~\" src/styles.less dist/styles.css",
-    "test": "tsc && cucumberjs --require features --require ../../steps"
+    "build": "lessc --npm-import=\"prefix=~\" src/styles.less dist/styles.css",
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
