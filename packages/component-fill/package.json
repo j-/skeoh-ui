@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/j-/skeoh-ui/issues"
   },
-  "homepage": "https://github.com/j-/skeoh-ui#readme",
-  "dependencies": {
-    "@skeoh-ui/common-styles": "*"
-  }
+  "homepage": "https://github.com/j-/skeoh-ui#readme"
 }
