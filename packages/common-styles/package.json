@@ -2,8 +2,8 @@
   "name": "@skeoh-ui/common-styles",
   "version": "0.0.0",
   "description": "Styles to be shared between components",
+  "main": "./src/styles.less",
   "scripts": {
-    "build": "lessc --npm-import=\"prefix=~\" src/styles.less dist/styles.css",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
