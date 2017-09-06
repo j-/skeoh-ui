@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/j-/skeoh-ui#readme",
   "dependencies": {
-    "@skeoh-ui/common-styles": "*"
+    "@skeoh-ui/styles-common": "*"
   }
 }

@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/j-/skeoh-ui#readme",
   "dependencies": {
-    "@skeoh-ui/common-styles": "*",
     "@skeoh-ui/component-fill": "*",
-    "@skeoh-ui/component-flex": "*"
+    "@skeoh-ui/component-flex": "*",
+    "@skeoh-ui/styles-common": "*"
   }
 }

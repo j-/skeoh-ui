@@ -1,7 +1,8 @@
 {
-  "name": "@skeoh-ui/common-styles",
+  "name": "@skeoh-ui/styles-main",
   "version": "0.0.0",
-  "description": "Styles to be shared between components",
+  "description": "Single stylesheet that declares generic styles",
+  "main": "./dist/styles.css",
   "scripts": {
     "build": "lessc --npm-import=\"prefix=~\" src/styles.less dist/styles.css",
     "test": "echo \"Error: no test specified\""
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/j-/skeoh-ui/issues"
   },
-  "homepage": "https://github.com/j-/skeoh-ui#readme"
+  "homepage": "https://github.com/j-/skeoh-ui#readme",
+  "dependencies": {
+    "@skeoh-ui/styles-common": "*"
+  }
 }
